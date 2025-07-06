@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Email Confirmation</title>
+</head>
+<body>
+<h1>Welcome to Blog Prototype!</h1>
+<p>Hi <span th:text="${user.username}"></span>,</p>
+<p>Thank you for registering. Please click on the link below to activate your account:</p>
+<p>
+    <a th:href="${confirmationUrl}" th:text="${confirmationUrl}">Confirmation Link</a>
+</p>
+<p>This link will expire in 24 hours.</p>
+<p>Best regards,<br/>Blog Prototype Team</p>
+</body>
+</html>

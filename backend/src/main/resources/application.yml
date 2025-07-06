@@ -1,0 +1,34 @@
+spring:
+  datasource:
+    password: 
+    url: jdbc:postgresql://localhost:5432/registration
+    username: postgres
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+    show-sql: true
+
+# Resend API Configuration
+resend:
+  api:
+    key: ${RESEND_API_KEY:HERE_RESEND_API_KEY}
+  from:
+    email: HERE_DOMAIN_EMAIL
+
+server:
+  port: 8080
+
+jwt:
+  secret: HERE_SECRET
+  expiration: 8640000
+
+app:
+  url: HERE_URL_FOR_EXAMPLE_http://localhost:8080
+logging:
+  level:
+    org.springframework.security: INFO
+    com.example.demo: DEBUG
