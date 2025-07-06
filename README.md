@@ -1,17 +1,24 @@
-# Robenhod - Story Platform
+# Robenhod - Professional Story Platform
 
-A simple and modern platform where people can write and share their stories with others.
+**Live Demo**: [robenhod.com](https://robenhod.com) *(Coming Soon)*
 
-## What is Robenhod?
+A full-stack web application demonstrating modern Java enterprise development practices with Spring Boot, built for content creators and readers.
 
-Robenhod is a website where writers can:
-- Write and publish articles
-- Share their stories with the world
-- Read stories from other writers
-- Like articles they enjoy
-- Create their own profile
+## Project Overview
 
-It's like a blog platform, but designed to be simple and beautiful for everyone to use.
+Robenhod is a professional blogging platform showcasing enterprise-level Java development skills:
+- **Full-Stack Architecture**: Complete separation of concerns with REST API backend
+- **Enterprise Security**: JWT authentication with email confirmation workflow
+- **Database Design**: Relational database with JPA/Hibernate ORM
+- **Modern Frontend**: SolidJS client consuming REST APIs
+- **Production-Ready**: Configured for deployment with proper error handling
+
+### Core Features
+- **Content Management**: Create, read, update, delete articles with rich text support
+- **User Authentication**: Secure registration, login, and account activation via email
+- **Social Features**: Article likes/reactions with real-time count updates
+- **User Profiles**: Personal dashboards and public author pages
+- **Responsive Design**: Mobile-first approach with modern UI/UX
 
 ## Features
 
@@ -32,20 +39,25 @@ It's like a blog platform, but designed to be simple and beautiful for everyone 
 - **Protected Content**: Only logged-in users can write articles
 - **Personal Data**: Each user can only edit their own articles
 
-## Technology
+## Technical Architecture
 
-### Frontend (What users see)
-- **SolidJS**: Modern web framework for fast, interactive pages
-- **TypeScript**: Better code quality and fewer bugs
-- **Tailwind CSS**: Beautiful, responsive design
-- **Modern Design**: Clean and easy to use interface
+### Backend (Java Enterprise Stack) 🎯
+- **Spring Boot 3.4.5**: Enterprise application framework with auto-configuration
+- **Spring Security**: JWT-based authentication with role-based access control
+- **Spring Data JPA**: Database abstraction with Hibernate ORM
+- **PostgreSQL**: Relational database with proper schema design
+- **Maven**: Dependency management and build automation
+- **Java 21**: Latest LTS features for modern development
+- **Email Service Integration**: Automated user confirmation workflows
+- **RESTful API Design**: Clean HTTP endpoints following REST principles
+- **Exception Handling**: Global error management with custom exceptions
+- **Validation**: Input validation using Bean Validation (JSR-303)
 
-### Backend (Server)
-- **Spring Boot**: Java framework for reliable server
-- **PostgreSQL**: Database to store articles and user data
-- **JWT Authentication**: Secure login system
-- **Email Confirmation**: Verify new user accounts
-- **REST API**: Clean communication between frontend and backend
+### Frontend (Modern Web Stack)
+- **SolidJS**: Reactive framework for dynamic user interfaces
+- **TypeScript**: Type-safe development for better code quality
+- **Tailwind CSS**: Utility-first styling for responsive design
+- **REST Client**: HTTP services consuming backend APIs
 
 ## How to Start the Project
 
