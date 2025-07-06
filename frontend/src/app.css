@@ -1,0 +1,25 @@
+/* app.css - Global styles and TailwindCSS configuration for the application */
+/* This file imports TailwindCSS and defines global styling rules */
+
+@import "tailwindcss";
+
+* {
+  box-sizing: border-box; 
+  outline: none;
+}
+/* Global body styles for consistent appearance */
+body {
+  background: #fff;  /* White background for clean appearance */
+  color: black;      /* Black text for good readability */
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Typography styling for main headings */
+h1 {
+  font-family: 'Faculty Glyphic', sans-serif;  /* Serif font for elegant headings */
+  font-weight: 600;             /* Semi-bold weight for prominence */
+}

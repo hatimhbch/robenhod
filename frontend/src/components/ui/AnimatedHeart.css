@@ -1,0 +1,160 @@
+.heart-path {
+  transform-origin: center;
+  transition: all 0.3s ease;
+}
+
+.heart-unliked .heart-path {
+  animation: animateHeartOut 0.3s linear forwards;
+}
+
+.heart-liked .heart-path {
+  transform: scale(0.2);
+  animation: animateHeart 0.3s linear forwards 0.25s;
+}
+
+.main-circle {
+  transform-origin: 29.5px 29.5px;
+}
+
+.heart-liked .main-circle {
+  animation: animateCircle 0.3s linear forwards;
+  opacity: 1;
+}
+
+.heart-liked .particle-group {
+  opacity: 1;
+  transition: 0.1s all 0.3s;
+}
+
+.heart-liked .particle-a,
+.heart-liked .particle-b {
+  transform-origin: 0 0 0;
+}
+
+.heart-liked .particle-a {
+  transition: 0.5s transform 0.3s;
+}
+
+.heart-liked .particle-b {
+  transition: 1.5s transform 0.3s;
+}
+
+.heart-liked .grp1 .particle-a {
+  transform: scale(0) translate(0, -30px);
+}
+
+.heart-liked .grp1 .particle-b {
+  transform: scale(0) translate(10px, -50px);
+}
+
+.heart-liked .grp2 .particle-a {
+  transform: scale(0) translate(30px, -15px);
+}
+
+.heart-liked .grp2 .particle-b {
+  transform: scale(0) translate(60px, -15px);
+}
+
+.heart-liked .grp3 .particle-a {
+  transform: scale(0) translate(30px, 0px);
+}
+
+.heart-liked .grp3 .particle-b {
+  transform: scale(0) translate(60px, 10px);
+}
+
+.heart-liked .grp4 .particle-a {
+  transform: scale(0) translate(30px, 15px);
+}
+
+.heart-liked .grp4 .particle-b {
+  transform: scale(0) translate(40px, 50px);
+}
+
+.heart-liked .grp5 .particle-a {
+  transform: scale(0) translate(-10px, 20px);
+}
+
+.heart-liked .grp5 .particle-b {
+  transform: scale(0) translate(-60px, 30px);
+}
+
+.heart-liked .grp6 .particle-a {
+  transform: scale(0) translate(-30px, 0px);
+}
+
+.heart-liked .grp6 .particle-b {
+  transform: scale(0) translate(-60px, -5px);
+}
+
+.heart-liked .grp7 .particle-a {
+  transform: scale(0) translate(-30px, -15px);
+}
+
+.heart-liked .grp7 .particle-b {
+  transform: scale(0) translate(-55px, -30px);
+}
+
+@keyframes animateCircle {
+  40% {
+    transform: scale(10);
+    opacity: 1;
+    fill: #dd4688;
+  }
+  55% {
+    transform: scale(11);
+    opacity: 1;
+    fill: #d46abf;
+  }
+  65% {
+    transform: scale(12);
+    opacity: 1;
+    fill: #cc8ef5;
+  }
+  75% {
+    transform: scale(13);
+    opacity: 1;
+    fill: transparent;
+    stroke: #cc8ef5;
+    stroke-width: 0.5;
+  }
+  85% {
+    transform: scale(17);
+    opacity: 1;
+    fill: transparent;
+    stroke: #cc8ef5;
+    stroke-width: 0.2;
+  }
+  95% {
+    transform: scale(18);
+    opacity: 1;
+    fill: transparent;
+    stroke: #cc8ef5;
+    stroke-width: 0.1;
+  }
+  100% {
+    transform: scale(19);
+    opacity: 1;
+    fill: transparent;
+    stroke: #cc8ef5;
+    stroke-width: 0;
+  }
+}
+
+@keyframes animateHeart {
+  0% {
+    transform: scale(0.2);
+  }
+  40% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 640px) {
+  .heart-path {
+    stroke-width: 2.5;
+  }
+} 
